@@ -28,7 +28,7 @@ stepsPerDay <- by(activityData.cleaned$steps, activityData.cleaned$date, sum)
 
 # Plot the histogram of the data
 hist(stepsPerDay, 15, las=1, 
-     xlim=c(0,25000), ylim=c(0,30),
+     xlim=c(0,25000), ylim=c(0,30), col="lightskyblue",
      main='Histogram of Steps Per Day',
      xlab='Number of steps per day')
 ```
@@ -127,7 +127,7 @@ and report the mean and median total number of steps taken per day.**
 ```r
 # Plot the histogram with imputed data
 hist(stepsPerDayImputed, 15, las=1, 
-     xlim=c(0,25000), ylim=c(0,30),
+     xlim=c(0,25000), ylim=c(0,30), col="lightskyblue",
      main='Histogram of Steps Per Day - Imputed Data',
      xlab='Number of steps')
 ```
